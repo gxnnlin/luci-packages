@@ -7,8 +7,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME := oscam
-PKG_REV := 71e569a
-PKG_VERSION := 2019-12-12_$(PKG_REV)
+PKG_REV := f6248c4
+PKG_VERSION := 2021-02-03_$(PKG_REV)
 PKG_RELEASE := 1
 
 PKG_SOURCE_PROTO:= git
