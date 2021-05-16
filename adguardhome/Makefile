@@ -1,25 +1,25 @@
 #
 # Copyright (C) 2015-2016 OpenWrt.org
 # This is free software, licensed under the GNU General Public License v2.
-# See /LICENSE.txt for more information.
+# See /LICENSE for more information.
 #
 
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=AdGuardHome
-PKG_VERSION:=0.105.2
+PKG_VERSION:=0.106.2
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_VERSION:=v$(PKG_VERSION)
 PKG_SOURCE_URL:=https://github.com/AdguardTeam/AdGuardHome
-PKG_MIRROR_HASH:=a85af0f251cb8473f032c400643bef920e4cb1756d08dfe3e06c4911e13bab24
+PKG_MIRROR_HASH:=14bc92941fa72a7d65dd6e561dc153cbbe06d2b95de4b5266671b65d464da7e7
 
 PKG_LICENSE:=GPL-3.0-only
 PKG_LICENSE_FILES:=LICENSE.txt
 PKG_MAINTAINER:=Dobroslaw Kijowski <dobo90@gmail.com>
 
-PKG_BUILD_DEPENDS:=golang/host node/host
+PKG_BUILD_DEPENDS:=golang/host node/host node-yarn/host packr/host
 PKG_BUILD_PARALLEL:=1
 PKG_USE_MIPS16:=0
 
